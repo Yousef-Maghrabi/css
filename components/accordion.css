@@ -1,0 +1,75 @@
+/* ===========================================
+   ACCORDION COMPONENT
+   Accordion component with collapsible content
+   =========================================== */
+
+accordion {
+  border: var(--border-width-1) solid var(--color-border-primary);
+  border-radius: var(--border-radius-md);
+  overflow: hidden;
+}
+
+accordion-item {
+  border-bottom: var(--border-width-1) solid var(--color-border-primary);
+}
+
+accordion-item:last-child {
+  border-bottom: none;
+}
+
+accordion-trigger {
+  width: 100%;
+  padding: var(--spacing-4);
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-primary);
+  transition: var(--transition-fast);
+}
+
+accordion-trigger:hover {
+  background-color: var(--color-bg-secondary);
+}
+
+accordion-trigger:focus {
+  outline: var(--border-width-2) solid var(--color-border-focus);
+  outline-offset: calc(var(--border-width-1) * -1);
+}
+
+accordion-trigger .accordion-icon {
+  width: var(--icon-size-base);
+  height: var(--icon-size-base);
+  transition: transform var(--transition-fast);
+}
+
+accordion-item[data-state="open"] accordion-trigger .accordion-icon {
+  transform: rotate(180deg);
+}
+
+accordion-content {
+  overflow: hidden;
+  transition: all var(--transition-fast) ease-in-out;
+}
+
+accordion-content[data-state="closed"] {
+  height: 0;
+  opacity: 0;
+}
+
+accordion-content[data-state="open"] {
+  height: auto;
+  opacity: 1;
+  padding: 0 var(--spacing-4) var(--spacing-4);
+}
+
+accordion-content .accordion-content-inner {
+  padding-top: var(--spacing-2);
+}
+
+

@@ -1,0 +1,44 @@
+/* ===========================================
+   BADGE COMPONENT
+   Badge component with variants and sizes
+   =========================================== */
+
+badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--badge-padding-x);
+  padding: var(--badge-padding-y) var(--badge-padding-x);
+  font-size: var(--badge-font-size);
+  font-weight: var(--badge-font-weight);
+  line-height: 1;
+  border-radius: var(--badge-border-radius);
+  white-space: nowrap;
+}
+
+badge[data-variant="solid"] {
+  background-color: var(--color-interactive-primary);
+  color: var(--color-text-inverse);
+}
+
+badge[data-variant="soft"] {
+  background-color: var(--color-primary-100);
+  color: var(--color-primary-800);
+}
+
+badge[data-variant="outline"] {
+  background-color: transparent;
+  color: var(--color-interactive-primary);
+  border: var(--border-width-1) solid var(--color-interactive-primary);
+}
+
+badge[data-size="sm"] {
+  padding: calc(var(--badge-padding-y) * 0.75) calc(var(--badge-padding-x) * 0.75);
+  font-size: var(--font-size-xs);
+}
+
+badge[data-size="lg"] {
+  padding: calc(var(--badge-padding-y) * 1.25) calc(var(--badge-padding-x) * 1.25);
+  font-size: var(--font-size-sm);
+}
+
+

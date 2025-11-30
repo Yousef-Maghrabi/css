@@ -1,0 +1,20 @@
+/* ===========================================
+   SKELETON COMPONENT
+   Skeleton loading component with variants
+   =========================================== */
+
+skeleton {
+  background-color: var(--color-bg-secondary);
+  border-radius: var(--border-radius-md);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+skeleton[data-variant="circle"] {
+  border-radius: var(--border-radius-full);
+}
+
+skeleton[data-variant="rounded"] {
+  border-radius: var(--border-radius-sm);
+}
+
+

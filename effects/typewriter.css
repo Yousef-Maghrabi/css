@@ -1,0 +1,35 @@
+/* ===========================================
+   TYPEWRITER EFFECTS
+   Typewriter and blinking caret animation effects
+   =========================================== */
+
+/* keyframes */
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: var(--color-text-primary);
+  }
+}
+
+/* typewriter utilities */
+typewriter {
+  overflow: hidden;
+  border-right: 2px solid var(--color-text-primary);
+  white-space: nowrap;
+  animation:
+    typewriter 2s steps(40, end),
+    blink-caret 0.75s step-end infinite;
+}
+
+

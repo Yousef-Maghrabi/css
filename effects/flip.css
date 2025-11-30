@@ -1,0 +1,107 @@
+/* ===========================================
+   FLIP EFFECTS
+   Flip animation effects with X and Y axis variants
+   =========================================== */
+
+/* keyframes */
+@keyframes flip-in-x {
+  from {
+    opacity: 0;
+    transform: rotateX(-90deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotateX(0deg);
+  }
+}
+
+@keyframes flip-out-x {
+  from {
+    opacity: 1;
+    transform: rotateX(0deg);
+  }
+  to {
+    opacity: 0;
+    transform: rotateX(90deg);
+  }
+}
+
+@keyframes flip-in-y {
+  from {
+    opacity: 0;
+    transform: rotateY(-90deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotateY(0deg);
+  }
+}
+
+@keyframes flip-out-y {
+  from {
+    opacity: 1;
+    transform: rotateY(0deg);
+  }
+  to {
+    opacity: 0;
+    transform: rotateY(90deg);
+  }
+}
+
+/* flip utilities */
+flip-in-x {
+  animation: flip-in-x var(--transition-base) ease-in-out;
+}
+
+flip-out-x {
+  animation: flip-out-x var(--transition-base) ease-in-out;
+}
+
+flip-in-y {
+  animation: flip-in-y var(--transition-base) ease-in-out;
+}
+
+flip-out-y {
+  animation: flip-out-y var(--transition-base) ease-in-out;
+}
+
+/* flip data attributes */
+flip-in-x[data-mode="startingframe"] {
+  opacity: 0;
+  transform: rotateX(-90deg);
+}
+
+flip-in-x[data-mode="endingframe"] {
+  opacity: 1;
+  transform: rotateX(0deg);
+}
+
+flip-out-x[data-mode="startingframe"] {
+  opacity: 1;
+  transform: rotateX(0deg);
+}
+
+flip-out-x[data-mode="endingframe"] {
+  opacity: 0;
+  transform: rotateX(90deg);
+}
+
+flip-in-y[data-mode="startingframe"] {
+  opacity: 0;
+  transform: rotateY(-90deg);
+}
+
+flip-in-y[data-mode="endingframe"] {
+  opacity: 1;
+  transform: rotateY(0deg);
+}
+
+flip-out-y[data-mode="startingframe"] {
+  opacity: 1;
+  transform: rotateY(0deg);
+}
+
+flip-out-y[data-mode="endingframe"] {
+  opacity: 0;
+  transform: rotateY(90deg);
+}

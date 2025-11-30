@@ -1,0 +1,41 @@
+/* ===========================================
+   PROGRESS COMPONENT
+   Progress bar component with variants
+   =========================================== */
+
+progress-bar {
+  width: 100%;
+  height: var(--spacing-2);
+  background-color: var(--color-bg-secondary);
+  border-radius: var(--border-radius-full);
+  overflow: hidden;
+}
+
+progress-fill {
+  height: 100%;
+  background-color: var(--color-interactive-primary);
+  border-radius: var(--border-radius-full);
+  transition: width var(--transition-base) ease-in-out;
+}
+
+progress-bar[data-size="sm"] {
+  height: var(--spacing-1);
+}
+
+progress-bar[data-size="lg"] {
+  height: var(--spacing-3);
+}
+
+progress-bar[data-variant="success"] progress-fill {
+  background-color: var(--color-state-success);
+}
+
+progress-bar[data-variant="warning"] progress-fill {
+  background-color: var(--color-state-warning);
+}
+
+progress-bar[data-variant="error"] progress-fill {
+  background-color: var(--color-state-error);
+}
+
+

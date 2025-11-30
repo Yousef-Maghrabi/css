@@ -1,0 +1,13 @@
+* { 
+    padding: 0; 
+    margin: 0; 
+    box-sizing: border-box; 
+    font-size: 62.5%; 
+    text-decoration: none;
+    border: none;
+    outline: none;
+    color: black; /*reset text to black*/ 
+    background-color: none;
+} 
+ 
+a, a:active, a:visited { color: black; } /*reset text to black in visited links*/   

@@ -1,0 +1,59 @@
+/* ===========================================
+   TABLE COMPONENT
+   Data table component with size and style variants
+   =========================================== */
+
+table-container {
+  overflow-x: auto;
+  border: var(--border-width-1) solid var(--color-border-primary);
+  border-radius: var(--border-radius-md);
+}
+
+data-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+data-table th,
+data-table td {
+  padding: var(--spacing-3) var(--spacing-4);
+  text-align: left;
+  border-bottom: var(--border-width-1) solid var(--color-border-primary);
+}
+
+data-table th {
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-primary);
+  background-color: var(--color-bg-secondary);
+  white-space: nowrap;
+}
+
+data-table td {
+  color: var(--color-text-secondary);
+}
+
+data-table tbody tr:hover {
+  background-color: var(--color-bg-secondary);
+}
+
+data-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+data-table[data-variant="striped"] tbody tr:nth-child(even) {
+  background-color: var(--color-bg-secondary);
+}
+
+data-table[data-size="sm"] th,
+data-table[data-size="sm"] td {
+  padding: var(--spacing-2) var(--spacing-3);
+  font-size: var(--font-size-sm);
+}
+
+data-table[data-size="lg"] th,
+data-table[data-size="lg"] td {
+  padding: var(--spacing-4) var(--spacing-6);
+  font-size: var(--font-size-base);
+}
+
+

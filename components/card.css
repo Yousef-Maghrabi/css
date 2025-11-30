@@ -1,0 +1,61 @@
+/* ===========================================
+   CARD COMPONENT
+   Card container component with variants
+   =========================================== */
+
+card {
+  background-color: var(--color-surface-primary);
+  border: var(--border-width-1) solid var(--color-border-primary);
+  border-radius: var(--card-border-radius);
+  box-shadow: var(--card-shadow);
+  overflow: hidden;
+  transition: var(--transition-fast);
+}
+
+card:hover {
+  box-shadow: var(--card-shadow-hover);
+}
+
+card-header {
+  padding: var(--card-padding);
+  border-bottom: var(--border-width-1) solid var(--color-border-primary);
+}
+
+card-title {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-primary);
+  margin: 0 0 var(--spacing-1) 0;
+}
+
+card-subtitle {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
+card-body {
+  padding: var(--card-padding);
+}
+
+card-footer {
+  padding: var(--card-padding);
+  border-top: var(--border-width-1) solid var(--color-border-primary);
+  background-color: var(--color-bg-secondary);
+}
+
+card[data-variant="elevated"] {
+  box-shadow: var(--shadow-lg);
+}
+
+card[data-variant="outlined"] {
+  box-shadow: none;
+  border-color: var(--color-border-secondary);
+}
+
+card[data-variant="filled"] {
+  border: none;
+  background-color: var(--color-bg-secondary);
+}
+
+

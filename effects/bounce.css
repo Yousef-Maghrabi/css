@@ -1,0 +1,85 @@
+/* ===========================================
+   BOUNCE EFFECTS
+   Bounce animation effects with gentle variants
+   =========================================== */
+
+/* keyframes */
+@keyframes bounce-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes bounce-out {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+}
+
+@keyframes bounce-gentle {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(calc(var(--spacing-1) * -1));
+  }
+  60% {
+    transform: translateY(calc(var(--spacing-1) * -1));
+  }
+}
+
+/* bounce utilities */
+bounce-in {
+  animation: bounce-in var(--transition-slow) ease-in-out;
+}
+
+bounce-out {
+  animation: bounce-out var(--transition-slow) ease-in-out;
+}
+
+bounce-gentle {
+  animation: bounce-gentle 2s ease-in-out infinite;
+}
+
+/* bounce data attributes */
+bounce-in[data-mode="startingframe"] {
+  opacity: 0;
+  transform: scale(0.3);
+}
+
+bounce-in[data-mode="endingframe"] {
+  opacity: 1;
+  transform: scale(1);
+}
+
+bounce-out[data-mode="startingframe"] {
+  opacity: 1;
+  transform: scale(1);
+}
+
+bounce-out[data-mode="endingframe"] {
+  opacity: 0;
+  transform: scale(0.3);
+}
+
+

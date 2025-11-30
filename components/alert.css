@@ -1,0 +1,63 @@
+/* ===========================================
+   ALERT COMPONENT
+   Alert component with status variants
+   =========================================== */
+
+alert {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-3);
+  padding: var(--spacing-4);
+  border-radius: var(--border-radius-md);
+  border: var(--border-width-1) solid;
+}
+
+alert-icon {
+  flex-shrink: 0;
+  width: var(--spacing-5);
+  height: var(--spacing-5);
+  margin-top: var(--spacing-0-5);
+}
+
+alert-content {
+  flex: 1;
+  min-width: 0;
+}
+
+alert-title {
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-primary);
+  margin-bottom: var(--spacing-1);
+}
+
+alert-description {
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-snug);
+}
+
+alert[data-variant="info"] {
+  background-color: var(--color-state-info-bg);
+  border-color: var(--color-state-info);
+  color: var(--color-primary-800);
+}
+
+alert[data-variant="success"] {
+  background-color: var(--color-state-success-bg);
+  border-color: var(--color-state-success);
+  color: var(--color-success-800);
+}
+
+alert[data-variant="warning"] {
+  background-color: var(--color-state-warning-bg);
+  border-color: var(--color-state-warning);
+  color: var(--color-warning-800);
+}
+
+alert[data-variant="error"] {
+  background-color: var(--color-state-error-bg);
+  border-color: var(--color-state-error);
+  color: var(--color-error-800);
+}
+
+

@@ -1,0 +1,312 @@
+/* ===========================================
+   SWIPE ANIMATION EFFECTS
+   Slide/swipe animations with directional variants
+   =========================================== */
+
+/* keyframes */
+@keyframes slide-in-up {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-in-down {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-in-left {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-in-right {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-out-up {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes slide-out-down {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(100%);
+  }
+}
+
+@keyframes slide-out-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes slide-out-right {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes swipe-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes swipe-right {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes swipe-up {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes swipe-down {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(100%);
+  }
+}
+
+/* slide utilities */
+slide-in-up {
+  animation: slide-in-up var(--transition-base) ease-in-out;
+}
+
+slide-in-down {
+  animation: slide-in-down var(--transition-base) ease-in-out;
+}
+
+slide-in-left {
+  animation: slide-in-left var(--transition-base) ease-in-out;
+}
+
+slide-in-right {
+  animation: slide-in-right var(--transition-base) ease-in-out;
+}
+
+slide-out-up {
+  animation: slide-out-up var(--transition-base) ease-in-out;
+}
+
+slide-out-down {
+  animation: slide-out-down var(--transition-base) ease-in-out;
+}
+
+slide-out-left {
+  animation: slide-out-left var(--transition-base) ease-in-out;
+}
+
+slide-out-right {
+  animation: slide-out-right var(--transition-base) ease-in-out;
+}
+
+/* swipe utilities */
+swipe-left {
+  animation: swipe-left var(--transition-base) ease-in-out;
+}
+
+swipe-right {
+  animation: swipe-right var(--transition-base) ease-in-out;
+}
+
+swipe-up {
+  animation: swipe-up var(--transition-base) ease-in-out;
+}
+
+swipe-down {
+  animation: swipe-down var(--transition-base) ease-in-out;
+}
+
+/* data attribute mode controls */
+slide-in-up[data-mode="startingframe"] {
+  transform: translateY(100%);
+}
+
+slide-in-up[data-mode="endingframe"] {
+  transform: translateY(0);
+}
+
+slide-in-down[data-mode="startingframe"] {
+  transform: translateY(-100%);
+}
+
+slide-in-down[data-mode="endingframe"] {
+  transform: translateY(0);
+}
+
+slide-in-left[data-mode="startingframe"] {
+  transform: translateX(-100%);
+}
+
+slide-in-left[data-mode="endingframe"] {
+  transform: translateX(0);
+}
+
+slide-in-right[data-mode="startingframe"] {
+  transform: translateX(100%);
+}
+
+slide-in-right[data-mode="endingframe"] {
+  transform: translateX(0);
+}
+
+slide-out-up[data-mode="startingframe"] {
+  transform: translateY(0);
+}
+
+slide-out-up[data-mode="endingframe"] {
+  transform: translateY(-100%);
+}
+
+slide-out-down[data-mode="startingframe"] {
+  transform: translateY(0);
+}
+
+slide-out-down[data-mode="endingframe"] {
+  transform: translateY(100%);
+}
+
+slide-out-left[data-mode="startingframe"] {
+  transform: translateX(0);
+}
+
+slide-out-left[data-mode="endingframe"] {
+  transform: translateX(-100%);
+}
+
+slide-out-right[data-mode="startingframe"] {
+  transform: translateX(0);
+}
+
+slide-out-right[data-mode="endingframe"] {
+  transform: translateX(100%);
+}
+
+swipe-left[data-mode="startingframe"] {
+  transform: translateX(0);
+}
+
+swipe-left[data-mode="endingframe"] {
+  transform: translateX(-100%);
+}
+
+swipe-right[data-mode="startingframe"] {
+  transform: translateX(0);
+}
+
+swipe-right[data-mode="endingframe"] {
+  transform: translateX(100%);
+}
+
+swipe-up[data-mode="startingframe"] {
+  transform: translateY(0);
+}
+
+swipe-up[data-mode="endingframe"] {
+  transform: translateY(-100%);
+}
+
+swipe-down[data-mode="startingframe"] {
+  transform: translateY(0);
+}
+
+swipe-down[data-mode="endingframe"] {
+  transform: translateY(100%);
+}
+
+/* slide object variants */
+slidein-obj-up {
+  animation: slide-in-up var(--transition-base) ease-in-out;
+}
+
+slidein-obj-down {
+  animation: slide-in-down var(--transition-base) ease-in-out;
+}
+
+slidein-obj-left {
+  animation: slide-in-left var(--transition-base) ease-in-out;
+}
+
+slidein-obj-right {
+  animation: slide-in-right var(--transition-base) ease-in-out;
+}
+
+slideout-obj-up {
+  animation: slide-out-up var(--transition-base) ease-in-out;
+}
+
+slideout-obj-down {
+  animation: slide-out-down var(--transition-base) ease-in-out;
+}
+
+slideout-obj-left {
+  animation: slide-out-left var(--transition-base) ease-in-out;
+}
+
+slideout-obj-right {
+  animation: slide-out-right var(--transition-base) ease-in-out;
+}
+
+/* swipe object variants */
+swipe-obj-left {
+  animation: swipe-left var(--transition-base) ease-in-out;
+}
+
+swipe-obj-right {
+  animation: swipe-right var(--transition-base) ease-in-out;
+}
+
+swipe-obj-up {
+  animation: swipe-up var(--transition-base) ease-in-out;
+}
+
+swipe-obj-down {
+  animation: swipe-down var(--transition-base) ease-in-out;
+}
+
+

@@ -1,0 +1,46 @@
+/* ===========================================
+   DISPLAY UTILITIES
+   Display property utilities
+   =========================================== */
+
+display-block {
+  display: block;
+}
+
+display-inline {
+  display: inline;
+}
+
+display-inline-block {
+  display: inline-block;
+}
+
+display-flex {
+  display: flex;
+}
+
+display-inline-flex {
+  display: inline-flex;
+}
+
+display-grid {
+  display: grid;
+}
+
+display-inline-grid {
+  display: inline-grid;
+}
+
+display-none {
+  display: none;
+}
+
+display-hidden {
+  visibility: hidden;
+}
+
+display-visible {
+  visibility: visible;
+}
+
+

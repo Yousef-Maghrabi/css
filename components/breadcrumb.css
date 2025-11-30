@@ -1,0 +1,39 @@
+/* ===========================================
+   BREADCRUMB COMPONENT
+   Breadcrumb navigation component
+   =========================================== */
+
+breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+  font-size: var(--font-size-sm);
+}
+
+breadcrumb-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+}
+
+breadcrumb-link {
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  transition: var(--transition-fast);
+}
+
+breadcrumb-link:hover {
+  color: var(--color-text-primary);
+}
+
+breadcrumb-link[data-current="true"] {
+  color: var(--color-text-primary);
+  font-weight: var(--font-weight-medium);
+}
+
+breadcrumb-separator {
+  color: var(--color-text-muted);
+  font-size: var(--font-size-xs);
+}
+
+

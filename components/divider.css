@@ -1,0 +1,39 @@
+/* ===========================================
+   DIVIDER COMPONENT
+   Divider component with orientation and style variants
+   =========================================== */
+
+divider {
+  height: var(--border-width-1);
+  background-color: var(--color-border-primary);
+  border: none;
+  margin: var(--spacing-4) 0;
+}
+
+divider[data-orientation="vertical"] {
+  width: var(--border-width-1);
+  height: auto;
+  margin: 0 var(--spacing-4);
+}
+
+divider[data-variant="dashed"] {
+  background: repeating-linear-gradient(
+    90deg,
+    var(--color-border-primary),
+    var(--color-border-primary) 4px,
+    transparent 4px,
+    transparent 8px
+  );
+}
+
+divider[data-variant="dotted"] {
+  background: repeating-linear-gradient(
+    90deg,
+    var(--color-border-primary),
+    var(--color-border-primary) 2px,
+    transparent 2px,
+    transparent 2px
+  );
+}
+
+

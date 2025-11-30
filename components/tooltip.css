@@ -1,0 +1,61 @@
+/* ===========================================
+   TOOLTIP COMPONENT
+   Tooltip component with positioning variants
+   =========================================== */
+
+tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+tooltip-trigger {
+  cursor: help;
+}
+
+tooltip-content {
+  position: absolute;
+  z-index: var(--tooltip-z-index);
+  padding: var(--tooltip-padding-y) var(--tooltip-padding-x);
+  background-color: var(--color-gray-900);
+  color: white;
+  border-radius: var(--tooltip-border-radius);
+  font-size: var(--tooltip-font-size);
+  font-weight: var(--font-weight-medium);
+  box-shadow: var(--tooltip-shadow);
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: all var(--transition-fast) ease-in-out;
+  pointer-events: none;
+}
+
+tooltip[data-state="visible"] tooltip-content {
+  opacity: 1;
+  visibility: visible;
+}
+
+tooltip[data-position="top"] tooltip-content {
+  bottom: calc(100% + var(--spacing-2));
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+tooltip[data-position="bottom"] tooltip-content {
+  top: calc(100% + var(--spacing-2));
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+tooltip[data-position="left"] tooltip-content {
+  right: calc(100% + var(--spacing-2));
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+tooltip[data-position="right"] tooltip-content {
+  left: calc(100% + var(--spacing-2));
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+

@@ -1,0 +1,40 @@
+/* ===========================================
+   MORPH EFFECTS
+   Shape morphing animation effects
+   =========================================== */
+
+/* keyframes */
+@keyframes morph-circle {
+  0% {
+    border-radius: var(--border-radius-none);
+  }
+  50% {
+    border-radius: var(--border-radius-full);
+  }
+  100% {
+    border-radius: var(--border-radius-none);
+  }
+}
+
+@keyframes morph-square {
+  0% {
+    border-radius: var(--border-radius-full);
+  }
+  50% {
+    border-radius: var(--border-radius-none);
+  }
+  100% {
+    border-radius: var(--border-radius-full);
+  }
+}
+
+/* morph utilities */
+morph-circle {
+  animation: morph-circle 2s ease-in-out infinite;
+}
+
+morph-square {
+  animation: morph-square 2s ease-in-out infinite;
+}
+
+
