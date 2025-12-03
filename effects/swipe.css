@@ -113,52 +113,52 @@
 }
 
 /* slide utilities */
-slide-in-up {
+.slide-in-up {
   animation: slide-in-up var(--transition-base) ease-in-out;
 }
 
-slide-in-down {
+.slide-in-down {
   animation: slide-in-down var(--transition-base) ease-in-out;
 }
 
-slide-in-left {
+.slide-in-left {
   animation: slide-in-left var(--transition-base) ease-in-out;
 }
 
-slide-in-right {
+.slide-in-right {
   animation: slide-in-right var(--transition-base) ease-in-out;
 }
 
-slide-out-up {
+.slide-out-up {
   animation: slide-out-up var(--transition-base) ease-in-out;
 }
 
-slide-out-down {
+.slide-out-down {
   animation: slide-out-down var(--transition-base) ease-in-out;
 }
 
-slide-out-left {
+.slide-out-left {
   animation: slide-out-left var(--transition-base) ease-in-out;
 }
 
-slide-out-right {
+.slide-out-right {
   animation: slide-out-right var(--transition-base) ease-in-out;
 }
 
 /* swipe utilities */
-swipe-left {
+.swipe-left {
   animation: swipe-left var(--transition-base) ease-in-out;
 }
 
-swipe-right {
+.swipe-right {
   animation: swipe-right var(--transition-base) ease-in-out;
 }
 
-swipe-up {
+.swipe-up {
   animation: swipe-up var(--transition-base) ease-in-out;
 }
 
-swipe-down {
+.swipe-down {
   animation: swipe-down var(--transition-base) ease-in-out;
 }
 
@@ -260,52 +260,52 @@ swipe-down[data-mode="endingframe"] {
 }
 
 /* slide object variants */
-slidein-obj-up {
+.slidein-obj-up {
   animation: slide-in-up var(--transition-base) ease-in-out;
 }
 
-slidein-obj-down {
+.slidein-obj-down {
   animation: slide-in-down var(--transition-base) ease-in-out;
 }
 
-slidein-obj-left {
+.slidein-obj-left {
   animation: slide-in-left var(--transition-base) ease-in-out;
 }
 
-slidein-obj-right {
+.slidein-obj-right {
   animation: slide-in-right var(--transition-base) ease-in-out;
 }
 
-slideout-obj-up {
+.slideout-obj-up {
   animation: slide-out-up var(--transition-base) ease-in-out;
 }
 
-slideout-obj-down {
+.slideout-obj-down {
   animation: slide-out-down var(--transition-base) ease-in-out;
 }
 
-slideout-obj-left {
+.slideout-obj-left {
   animation: slide-out-left var(--transition-base) ease-in-out;
 }
 
-slideout-obj-right {
+.slideout-obj-right {
   animation: slide-out-right var(--transition-base) ease-in-out;
 }
 
 /* swipe object variants */
-swipe-obj-left {
+.swipe-obj-left {
   animation: swipe-left var(--transition-base) ease-in-out;
 }
 
-swipe-obj-right {
+.swipe-obj-right {
   animation: swipe-right var(--transition-base) ease-in-out;
 }
 
-swipe-obj-up {
+.swipe-obj-up {
   animation: swipe-up var(--transition-base) ease-in-out;
 }
 
-swipe-obj-down {
+.swipe-obj-down {
   animation: swipe-down var(--transition-base) ease-in-out;
 }
 

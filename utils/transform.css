@@ -3,247 +3,247 @@
    Transform property utilities
    =========================================== */
 
-transform-none {
+.transform-none {
   transform: none;
 }
 
-transform-gpu {
+.transform-gpu {
   transform: translateZ(0);
 }
 
-scale-0 {
+.scale-0 {
   transform: scale(0);
 }
 
-scale-50 {
+.scale-50 {
   transform: scale(0.5);
 }
 
-scale-75 {
+.scale-75 {
   transform: scale(0.75);
 }
 
-scale-90 {
+.scale-90 {
   transform: scale(0.9);
 }
 
-scale-95 {
+.scale-95 {
   transform: scale(0.95);
 }
 
-scale-100 {
+.scale-100 {
   transform: scale(1);
 }
 
-scale-105 {
+.scale-105 {
   transform: scale(1.05);
 }
 
-scale-110 {
+.scale-110 {
   transform: scale(1.1);
 }
 
-scale-125 {
+.scale-125 {
   transform: scale(1.25);
 }
 
-scale-150 {
+.scale-150 {
   transform: scale(1.5);
 }
 
-rotate-0 {
+.rotate-0 {
   transform: rotate(0deg);
 }
 
-rotate-1 {
+.rotate-1 {
   transform: rotate(1deg);
 }
 
-rotate-2 {
+.rotate-2 {
   transform: rotate(2deg);
 }
 
-rotate-3 {
+.rotate-3 {
   transform: rotate(3deg);
 }
 
-rotate-6 {
+.rotate-6 {
   transform: rotate(6deg);
 }
 
-rotate-12 {
+.rotate-12 {
   transform: rotate(12deg);
 }
 
-rotate-45 {
+.rotate-45 {
   transform: rotate(45deg);
 }
 
-rotate-90 {
+.rotate-90 {
   transform: rotate(90deg);
 }
 
-rotate-180 {
+.rotate-180 {
   transform: rotate(180deg);
 }
 
-translate-x-0 {
+.translate-x-0 {
   transform: translateX(0);
 }
 
-translate-x-1 {
+.translate-x-1 {
   transform: translateX(var(--spacing-1));
 }
 
-translate-x-2 {
+.translate-x-2 {
   transform: translateX(var(--spacing-2));
 }
 
-translate-x-3 {
+.translate-x-3 {
   transform: translateX(var(--spacing-3));
 }
 
-translate-x-4 {
+.translate-x-4 {
   transform: translateX(var(--spacing-4));
 }
 
-translate-x-5 {
+.translate-x-5 {
   transform: translateX(var(--spacing-5));
 }
 
-translate-x-6 {
+.translate-x-6 {
   transform: translateX(var(--spacing-6));
 }
 
-translate-x-8 {
+.translate-x-8 {
   transform: translateX(var(--spacing-8));
 }
 
-translate-x-10 {
+.translate-x-10 {
   transform: translateX(var(--spacing-10));
 }
 
-translate-x-12 {
+.translate-x-12 {
   transform: translateX(var(--spacing-12));
 }
 
-translate-x-16 {
+.translate-x-16 {
   transform: translateX(var(--spacing-16));
 }
 
-translate-x-20 {
+.translate-x-20 {
   transform: translateX(var(--spacing-20));
 }
 
-translate-x-24 {
+.translate-x-24 {
   transform: translateX(var(--spacing-24));
 }
 
-translate-x-32 {
+.translate-x-32 {
   transform: translateX(var(--spacing-32));
 }
 
-translate-x-40 {
+.translate-x-40 {
   transform: translateX(var(--spacing-40));
 }
 
-translate-x-48 {
+.translate-x-48 {
   transform: translateX(var(--spacing-48));
 }
 
-translate-x-56 {
+.translate-x-56 {
   transform: translateX(var(--spacing-56));
 }
 
-translate-x-64 {
+.translate-x-64 {
   transform: translateX(var(--spacing-64));
 }
 
-translate-x-full {
+.translate-x-full {
   transform: translateX(100%);
 }
 
-translate-x--full {
+.translate-x--full {
   transform: translateX(-100%);
 }
 
-translate-y-0 {
+.translate-y-0 {
   transform: translateY(0);
 }
 
-translate-y-1 {
+.translate-y-1 {
   transform: translateY(var(--spacing-1));
 }
 
-translate-y-2 {
+.translate-y-2 {
   transform: translateY(var(--spacing-2));
 }
 
-translate-y-3 {
+.translate-y-3 {
   transform: translateY(var(--spacing-3));
 }
 
-translate-y-4 {
+.translate-y-4 {
   transform: translateY(var(--spacing-4));
 }
 
-translate-y-5 {
+.translate-y-5 {
   transform: translateY(var(--spacing-5));
 }
 
-translate-y-6 {
+.translate-y-6 {
   transform: translateY(var(--spacing-6));
 }
 
-translate-y-8 {
+.translate-y-8 {
   transform: translateY(var(--spacing-8));
 }
 
-translate-y-10 {
+.translate-y-10 {
   transform: translateY(var(--spacing-10));
 }
 
-translate-y-12 {
+.translate-y-12 {
   transform: translateY(var(--spacing-12));
 }
 
-translate-y-16 {
+.translate-y-16 {
   transform: translateY(var(--spacing-16));
 }
 
-translate-y-20 {
+.translate-y-20 {
   transform: translateY(var(--spacing-20));
 }
 
-translate-y-24 {
+.translate-y-24 {
   transform: translateY(var(--spacing-24));
 }
 
-translate-y-32 {
+.translate-y-32 {
   transform: translateY(var(--spacing-32));
 }
 
-translate-y-40 {
+.translate-y-40 {
   transform: translateY(var(--spacing-40));
 }
 
-translate-y-48 {
+.translate-y-48 {
   transform: translateY(var(--spacing-48));
 }
 
-translate-y-56 {
+.translate-y-56 {
   transform: translateY(var(--spacing-56));
 }
 
-translate-y-64 {
+.translate-y-64 {
   transform: translateY(var(--spacing-64));
 }
 
-translate-y-full {
+.translate-y-full {
   transform: translateY(100%);
 }
 
-translate-y--full {
+.translate-y--full {
   transform: translateY(-100%);
 }
 

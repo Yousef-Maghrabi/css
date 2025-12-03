@@ -4,7 +4,7 @@
    =========================================== */
 
 /* base button styles */
-btn {
+.btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -21,100 +21,100 @@ btn {
 }
 
 /* button sizes */
-btn[data-size="sm"] {
+.btn[data-size="sm"] {
   padding: var(--button-padding-y-sm) var(--button-padding-x-sm);
   font-size: var(--button-font-size-sm);
   min-height: var(--input-height-sm);
 }
 
-btn[data-size="base"] {
+.btn[data-size="base"] {
   padding: var(--button-padding-y-base) var(--button-padding-x-base);
   font-size: var(--button-font-size-base);
   min-height: var(--input-height-base);
 }
 
-btn[data-size="lg"] {
+.btn[data-size="lg"] {
   padding: var(--button-padding-y-lg) var(--button-padding-x-lg);
   font-size: var(--button-font-size-lg);
   min-height: var(--input-height-lg);
 }
 
 /* default size (base) */
-btn:not([data-size]) {
+.btn:not([data-size]) {
   padding: var(--button-padding-y-base) var(--button-padding-x-base);
   font-size: var(--button-font-size-base);
   min-height: var(--input-height-base);
 }
 
 /* button variants */
-btn[data-variant="primary"] {
+.btn[data-variant="primary"] {
   background-color: var(--color-interactive-primary);
   color: var(--color-text-inverse);
   border-color: var(--color-interactive-primary);
 }
 
-btn[data-variant="primary"]:hover:not(:disabled) {
+.btn[data-variant="primary"]:hover:not(:disabled) {
   background-color: var(--color-interactive-primary-hover);
   border-color: var(--color-interactive-primary-hover);
 }
 
-btn[data-variant="primary"]:active:not(:disabled) {
+.btn[data-variant="primary"]:active:not(:disabled) {
   background-color: var(--color-interactive-primary-active);
   border-color: var(--color-interactive-primary-active);
 }
 
-btn[data-variant="secondary"] {
+.btn[data-variant="secondary"] {
   background-color: var(--color-interactive-secondary);
   color: var(--color-text-primary);
   border-color: var(--color-border-primary);
 }
 
-btn[data-variant="secondary"]:hover:not(:disabled) {
+.btn[data-variant="secondary"]:hover:not(:disabled) {
   background-color: var(--color-interactive-secondary-hover);
   border-color: var(--color-border-secondary);
 }
 
-btn[data-variant="secondary"]:active:not(:disabled) {
+.btn[data-variant="secondary"]:active:not(:disabled) {
   background-color: var(--color-interactive-secondary-active);
   border-color: var(--color-border-tertiary);
 }
 
 /* default variant (primary) */
-btn:not([data-variant]) {
+.btn:not([data-variant]) {
   background-color: var(--color-interactive-primary);
   color: var(--color-text-inverse);
   border-color: var(--color-interactive-primary);
 }
 
-btn:not([data-variant]):hover:not(:disabled) {
+.btn:not([data-variant]):hover:not(:disabled) {
   background-color: var(--color-interactive-primary-hover);
   border-color: var(--color-interactive-primary-hover);
 }
 
-btn:not([data-variant]):active:not(:disabled) {
+.btn:not([data-variant]):active:not(:disabled) {
   background-color: var(--color-interactive-primary-active);
   border-color: var(--color-interactive-primary-active);
 }
 
 /* button states */
-btn:focus-visible {
+.btn:focus-visible {
   outline: var(--border-width-2) solid var(--color-border-focus);
   outline-offset: var(--border-width-1);
 }
 
-btn:disabled,
-btn[data-disabled="true"] {
+.btn:disabled,
+.btn[data-disabled="true"] {
   opacity: var(--opacity-50);
   cursor: not-allowed;
   pointer-events: none;
 }
 
-btn[data-loading="true"] {
+.btn[data-loading="true"] {
   position: relative;
   color: transparent;
 }
 
-btn[data-loading="true"]::after {
+.btn[data-loading="true"]::after {
   content: '';
   position: absolute;
   width: var(--icon-size-base);
@@ -136,7 +136,7 @@ btn[data-loading="true"]::after {
 }
 
 /* button with icon */
-btn:has(.btn-icon) {
+.btn:has(.btn-icon) {
   gap: var(--spacing-2);
 }
 
@@ -146,96 +146,96 @@ btn:has(.btn-icon) {
   height: var(--icon-size-base);
 }
 
-btn[data-size="sm"] .btn-icon {
+.btn[data-size="sm"] .btn-icon {
   width: var(--icon-size-sm);
   height: var(--icon-size-sm);
 }
 
-btn[data-size="lg"] .btn-icon {
+.btn[data-size="lg"] .btn-icon {
   width: var(--icon-size-lg);
   height: var(--icon-size-lg);
 }
 
 /* button group */
-btn-group {
+.btn-group {
   display: inline-flex;
 }
 
-btn-group btn {
+.btn-group .btn {
   border-radius: 0;
   margin: 0;
 }
 
-btn-group btn:first-child {
+.btn-group .btn:first-child {
   border-top-left-radius: var(--button-border-radius);
   border-bottom-left-radius: var(--button-border-radius);
 }
 
-btn-group btn:last-child {
+.btn-group .btn:last-child {
   border-top-right-radius: var(--button-border-radius);
   border-bottom-right-radius: var(--button-border-radius);
 }
 
-btn-group btn:not(:first-child) {
+.btn-group .btn:not(:first-child) {
   border-left: 0;
 }
 
-btn-group btn:not(:last-child) {
+.btn-group .btn:not(:last-child) {
   border-right: 0;
 }
 
 /* button variants for specific use cases */
-btn[data-variant="success"] {
+.btn[data-variant="success"] {
   background-color: var(--color-state-success);
   color: white;
   border-color: var(--color-state-success);
 }
 
-btn[data-variant="success"]:hover:not(:disabled) {
+.btn[data-variant="success"]:hover:not(:disabled) {
   background-color: var(--color-success-700);
   border-color: var(--color-success-700);
 }
 
-btn[data-variant="error"] {
+.btn[data-variant="error"] {
   background-color: var(--color-state-error);
   color: white;
   border-color: var(--color-state-error);
 }
 
-btn[data-variant="error"]:hover:not(:disabled) {
+.btn[data-variant="error"]:hover:not(:disabled) {
   background-color: var(--color-error-700);
   border-color: var(--color-error-700);
 }
 
-btn[data-variant="warning"] {
+.btn[data-variant="warning"] {
   background-color: var(--color-state-warning);
   color: var(--color-gray-900);
   border-color: var(--color-state-warning);
 }
 
-btn[data-variant="warning"]:hover:not(:disabled) {
+.btn[data-variant="warning"]:hover:not(:disabled) {
   background-color: var(--color-warning-700);
   border-color: var(--color-warning-700);
 }
 
-btn[data-variant="ghost"] {
+.btn[data-variant="ghost"] {
   background-color: transparent;
   color: var(--color-text-primary);
   border-color: transparent;
 }
 
-btn[data-variant="ghost"]:hover:not(:disabled) {
+.btn[data-variant="ghost"]:hover:not(:disabled) {
   background-color: var(--color-bg-secondary);
   border-color: var(--color-border-primary);
 }
 
-btn[data-variant="outline"] {
+.btn[data-variant="outline"] {
   background-color: transparent;
   color: var(--color-interactive-primary);
   border-color: var(--color-interactive-primary);
 }
 
-btn[data-variant="outline"]:hover:not(:disabled) {
+.btn[data-variant="outline"]:hover:not(:disabled) {
   background-color: var(--color-interactive-primary);
   color: var(--color-text-inverse);
 }

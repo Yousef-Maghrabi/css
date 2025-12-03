@@ -23,11 +23,11 @@
 }
 
 /* float utilities */
-float {
+.float {
   animation: float 3s ease-in-out infinite;
 }
 
-float-slow {
+.float-slow {
   animation: float-slow 6s ease-in-out infinite;
 }
 

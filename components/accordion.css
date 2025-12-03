@@ -3,21 +3,21 @@
    Accordion component with collapsible content
    =========================================== */
 
-accordion {
+.accordion {
   border: var(--border-width-1) solid var(--color-border-primary);
   border-radius: var(--border-radius-md);
   overflow: hidden;
 }
 
-accordion-item {
+.accordion-item {
   border-bottom: var(--border-width-1) solid var(--color-border-primary);
 }
 
-accordion-item:last-child {
+.accordion-item:last-child {
   border-bottom: none;
 }
 
-accordion-trigger {
+.accordion-trigger {
   width: 100%;
   padding: var(--spacing-4);
   background: none;
@@ -33,16 +33,16 @@ accordion-trigger {
   transition: var(--transition-fast);
 }
 
-accordion-trigger:hover {
+.accordion-trigger:hover {
   background-color: var(--color-bg-secondary);
 }
 
-accordion-trigger:focus {
+..accordion-trigger:focus {
   outline: var(--border-width-2) solid var(--color-border-focus);
   outline-offset: calc(var(--border-width-1) * -1);
 }
 
-accordion-trigger .accordion-icon {
+.accordion-trigger .accordion-icon {
   width: var(--icon-size-base);
   height: var(--icon-size-base);
   transition: transform var(--transition-fast);
@@ -52,7 +52,7 @@ accordion-item[data-state="open"] accordion-trigger .accordion-icon {
   transform: rotate(180deg);
 }
 
-accordion-content {
+.accordion-content {
   overflow: hidden;
   transition: all var(--transition-fast) ease-in-out;
 }

@@ -3,7 +3,7 @@
    Progress bar component with variants
    =========================================== */
 
-progress-bar {
+.progress-bar {
   width: 100%;
   height: var(--spacing-2);
   background-color: var(--color-bg-secondary);
@@ -11,30 +11,30 @@ progress-bar {
   overflow: hidden;
 }
 
-progress-fill {
+.progress-fill {
   height: 100%;
   background-color: var(--color-interactive-primary);
   border-radius: var(--border-radius-full);
   transition: width var(--transition-base) ease-in-out;
 }
 
-progress-bar[data-size="sm"] {
+.progress-bar[data-size="sm"] {
   height: var(--spacing-1);
 }
 
-progress-bar[data-size="lg"] {
+.progress-bar[data-size="lg"] {
   height: var(--spacing-3);
 }
 
-progress-bar[data-variant="success"] progress-fill {
+.progress-bar[data-variant="success"] .progress-fill {
   background-color: var(--color-state-success);
 }
 
-progress-bar[data-variant="warning"] progress-fill {
+.progress-bar[data-variant="warning"] .progress-fill {
   background-color: var(--color-state-warning);
 }
 
-progress-bar[data-variant="error"] progress-fill {
+.progress-bar[data-variant="error"] .progress-fill {
   background-color: var(--color-state-error);
 }
 

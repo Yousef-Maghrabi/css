@@ -49,15 +49,15 @@
 }
 
 /* bounce utilities */
-bounce-in {
+.bounce-in {
   animation: bounce-in var(--transition-slow) ease-in-out;
 }
 
-bounce-out {
+.bounce-out {
   animation: bounce-out var(--transition-slow) ease-in-out;
 }
 
-bounce-gentle {
+.bounce-gentle {
   animation: bounce-gentle 2s ease-in-out infinite;
 }
 

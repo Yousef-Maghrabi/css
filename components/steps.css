@@ -3,19 +3,19 @@
    Steps progress indicator component
    =========================================== */
 
-steps {
+.steps {
   display: flex;
   align-items: center;
 }
 
-step {
+.step {
   display: flex;
   align-items: center;
   gap: var(--spacing-2);
   position: relative;
 }
 
-step:not(:last-child)::after {
+.step:not(:last-child)::after {
   content: '';
   position: absolute;
   left: calc(100% + var(--spacing-3));
@@ -26,7 +26,7 @@ step:not(:last-child)::after {
   background-color: var(--color-border-primary);
 }
 
-step-circle {
+.step-circle {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -41,31 +41,31 @@ step-circle {
   flex-shrink: 0;
 }
 
-step[data-state="completed"] step-circle {
+.step[data-state="completed"] .step-circle {
   background-color: var(--color-state-success);
   border-color: var(--color-state-success);
   color: white;
 }
 
-step[data-state="current"] step-circle {
+.step[data-state="current"] .step-circle {
   background-color: var(--color-interactive-primary);
   border-color: var(--color-interactive-primary);
   color: white;
 }
 
-step-content {
+.step-content {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-1);
 }
 
-step-title {
+.step-title {
   font-size: var(--font-size-sm);
   font-weight: var(--font-weight-medium);
   color: var(--color-text-primary);
 }
 
-step-description {
+.step-description {
   font-size: var(--font-size-xs);
   color: var(--color-text-secondary);
 }

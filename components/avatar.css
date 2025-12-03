@@ -3,7 +3,7 @@
    Avatar component with size variants and groups
    =========================================== */
 
-avatar {
+.avatar {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -14,52 +14,52 @@ avatar {
   font-weight: var(--font-weight-medium);
 }
 
-avatar img {
+.avatar img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-avatar[data-size="xs"] {
+.avatar[data-size="xs"] {
   width: var(--avatar-size-xs);
   height: var(--avatar-size-xs);
   font-size: var(--font-size-xs);
 }
 
-avatar[data-size="sm"] {
+.avatar[data-size="sm"] {
   width: var(--avatar-size-sm);
   height: var(--avatar-size-sm);
   font-size: var(--font-size-sm);
 }
 
-avatar[data-size="base"] {
+.avatar[data-size="base"] {
   width: var(--avatar-size-base);
   height: var(--avatar-size-base);
   font-size: var(--font-size-base);
 }
 
-avatar[data-size="lg"] {
+.avatar[data-size="lg"] {
   width: var(--avatar-size-lg);
   height: var(--avatar-size-lg);
   font-size: var(--font-size-lg);
 }
 
-avatar[data-size="xl"] {
+.avatar[data-size="xl"] {
   width: var(--avatar-size-xl);
   height: var(--avatar-size-xl);
   font-size: var(--font-size-xl);
 }
 
-avatar-group {
+.avatar-group {
   display: flex;
 }
 
-avatar-group avatar {
+.avatar-group .avatar {
   border: var(--avatar-border-width) solid var(--color-surface-primary);
   margin-left: calc(var(--avatar-border-width) * -1);
 }
 
-avatar-group avatar:first-child {
+.avatar-group .avatar:first-child {
   margin-left: 0;
 }
 

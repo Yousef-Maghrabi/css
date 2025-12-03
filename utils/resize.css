@@ -3,19 +3,19 @@
    Resize property utilities
    =========================================== */
 
-resize-none {
+.resize-none {
   resize: none;
 }
 
-resize-y {
+.resize-y {
   resize: vertical;
 }
 
-resize-x {
+.resize-x {
   resize: horizontal;
 }
 
-resize {
+.resize {
   resize: both;
 }
 

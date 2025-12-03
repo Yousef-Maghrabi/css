@@ -3,115 +3,115 @@
    Flexbox property utilities
    =========================================== */
 
-flex-row {
+.flex-row {
   flex-direction: row;
 }
 
-flex-row-reverse {
+.flex-row-reverse {
   flex-direction: row-reverse;
 }
 
-flex-col {
+.flex-col {
   flex-direction: column;
 }
 
-flex-col-reverse {
+.flex-col-reverse {
   flex-direction: column-reverse;
 }
 
-flex-wrap {
+.flex-wrap {
   flex-wrap: wrap;
 }
 
-flex-wrap-reverse {
+.flex-wrap-reverse {
   flex-wrap: wrap-reverse;
 }
 
-flex-nowrap {
+.flex-nowrap {
   flex-wrap: nowrap;
 }
 
-flex-1 {
+.flex-1 {
   flex: 1 1 0%;
 }
 
-flex-auto {
+.flex-auto {
   flex: 1 1 auto;
 }
 
-flex-initial {
+.flex-initial {
   flex: 0 1 auto;
 }
 
-flex-none {
+.flex-none {
   flex: none;
 }
 
-justify-start {
+.justify-start {
   justify-content: flex-start;
 }
 
-justify-end {
+.justify-end {
   justify-content: flex-end;
 }
 
-justify-center {
+.justify-center {
   justify-content: center;
 }
 
-justify-between {
+.justify-between {
   justify-content: space-between;
 }
 
-justify-around {
+.justify-around {
   justify-content: space-around;
 }
 
-justify-evenly {
+.justify-evenly {
   justify-content: space-evenly;
 }
 
-items-start {
+.items-start {
   align-items: flex-start;
 }
 
-items-end {
+.items-end {
   align-items: flex-end;
 }
 
-items-center {
+.items-center {
   align-items: center;
 }
 
-items-baseline {
+.items-baseline {
   align-items: baseline;
 }
 
-items-stretch {
+.items-stretch {
   align-items: stretch;
 }
 
-self-auto {
+.self-auto {
   align-self: auto;
 }
 
-self-start {
+.self-start {
   align-self: flex-start;
 }
 
-self-end {
+.self-end {
   align-self: flex-end;
 }
 
-self-center {
+.self-center {
   align-self: center;
 }
 
-self-stretch {
+.self-stretch {
   align-self: stretch;
 }
 
-self-baseline {
+.self-baseline {
   align-self: baseline;
 }
 

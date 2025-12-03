@@ -55,14 +55,14 @@
 }
 
 /* slide utilities */
-slide-in-blur {
+.slide-in-blur {
   animation: slide-in-blur var(--transition-base) ease-in-out;
 }
 
-slide-out-blur {
+.slide-out-blur {
   animation: slide-out-blur var(--transition-base) ease-in-out;
 }
 
-slide-elastic {
+.slide-elastic {
   animation: slide-elastic 1s ease-out;
 }

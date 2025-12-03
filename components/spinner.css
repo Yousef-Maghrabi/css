@@ -3,7 +3,7 @@
    Spinner loading component with size variants
    =========================================== */
 
-spinner {
+.spinner {
   display: inline-block;
   width: var(--spacing-6);
   height: var(--spacing-6);
@@ -13,19 +13,19 @@ spinner {
   animation: spin 1s linear infinite;
 }
 
-spinner[data-size="sm"] {
+.spinner[data-size="sm"] {
   width: var(--spacing-4);
   height: var(--spacing-4);
   border-width: var(--border-width-1);
 }
 
-spinner[data-size="lg"] {
+.spinner[data-size="lg"] {
   width: var(--spacing-8);
   height: var(--spacing-8);
   border-width: var(--border-width-3);
 }
 
-spinner[data-variant="light"] {
+.spinner[data-variant="light"] {
   border-top-color: white;
   border-color: rgba(255, 255, 255, 0.3);
 }

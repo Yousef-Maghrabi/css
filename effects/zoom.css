@@ -38,14 +38,14 @@
 }
 
 /* zoom utilities */
-zoom-in {
+.zoom-in {
   animation: zoom-in var(--transition-base) ease-in-out;
 }
 
-zoom-out {
+.zoom-out {
   animation: zoom-out var(--transition-base) ease-in-out;
 }
 
-zoom-in-fast {
+.zoom-in-fast {
   animation: zoom-in-fast var(--transition-fast) ease-in-out;
 }

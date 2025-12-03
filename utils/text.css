@@ -4,243 +4,243 @@
    =========================================== */
 
 /* font family */
-font-sans {
+.font-sans {
   font-family: var(--font-family-sans);
 }
 
-font-mono {
+.font-mono {
   font-family: var(--font-family-mono);
 }
 
 /* font size */
-text-xs {
+.text-xs {
   font-size: var(--font-size-xs);
 }
 
-text-sm {
+.text-sm {
   font-size: var(--font-size-sm);
 }
 
-text-base {
+.text-base {
   font-size: var(--font-size-base);
 }
 
-text-lg {
+.text-lg {
   font-size: var(--font-size-lg);
 }
 
-text-xl {
+.text-xl {
   font-size: var(--font-size-xl);
 }
 
-text-2xl {
+.text-2xl {
   font-size: var(--font-size-2xl);
 }
 
-text-3xl {
+.text-3xl {
   font-size: var(--font-size-3xl);
 }
 
-text-4xl {
+.text-4xl {
   font-size: var(--font-size-4xl);
 }
 
-text-5xl {
+.text-5xl {
   font-size: var(--font-size-5xl);
 }
 
-text-6xl {
+.text-6xl {
   font-size: var(--font-size-6xl);
 }
 
-text-7xl {
+.text-7xl {
   font-size: var(--font-size-7xl);
 }
 
-text-8xl {
+.text-8xl {
   font-size: var(--font-size-8xl);
 }
 
-text-9xl {
+.text-9xl {
   font-size: var(--font-size-9xl);
 }
 
 /* font weight */
-font-thin {
+.font-thin {
   font-weight: var(--font-weight-thin);
 }
 
-font-light {
+.font-light {
   font-weight: var(--font-weight-light);
 }
 
-font-normal {
+.font-normal {
   font-weight: var(--font-weight-normal);
 }
 
-font-medium {
+.font-medium {
   font-weight: var(--font-weight-medium);
 }
 
-font-semibold {
+.font-semibold {
   font-weight: var(--font-weight-semibold);
 }
 
-font-bold {
+.font-bold {
   font-weight: var(--font-weight-bold);
 }
 
-font-extrabold {
+.font-extrabold {
   font-weight: var(--font-weight-extrabold);
 }
 
-font-black {
+.font-black {
   font-weight: var(--font-weight-black);
 }
 
 /* line height */
-leading-none {
+.leading-none {
   line-height: var(--line-height-none);
 }
 
-leading-tight {
+.leading-tight {
   line-height: var(--line-height-tight);
 }
 
-leading-snug {
+.leading-snug {
   line-height: var(--line-height-snug);
 }
 
-leading-normal {
+.leading-normal {
   line-height: var(--line-height-normal);
 }
 
-leading-relaxed {
+.leading-relaxed {
   line-height: var(--line-height-relaxed);
 }
 
-leading-loose {
+.leading-loose {
   line-height: var(--line-height-loose);
 }
 
 /* letter spacing */
-tracking-tighter {
+.tracking-tighter {
   letter-spacing: var(--letter-spacing-tighter);
 }
 
-tracking-tight {
+.tracking-tight {
   letter-spacing: var(--letter-spacing-tight);
 }
 
-tracking-normal {
+.tracking-normal {
   letter-spacing: var(--letter-spacing-normal);
 }
 
-tracking-wide {
+.tracking-wide {
   letter-spacing: var(--letter-spacing-wide);
 }
 
-tracking-wider {
+.tracking-wider {
   letter-spacing: var(--letter-spacing-wider);
 }
 
-tracking-widest {
+.tracking-widest {
   letter-spacing: var(--letter-spacing-widest);
 }
 
 /* text alignment */
-text-left {
+.text-left {
   text-align: left;
 }
 
-text-center {
+.text-center {
   text-align: center;
 }
 
-text-right {
+.text-right {
   text-align: right;
 }
 
-text-justify {
+.text-justify {
   text-align: justify;
 }
 
 /* text decoration */
-text-underline {
+.text-underline {
   text-decoration: underline;
 }
 
-text-line-through {
+.text-line-through {
   text-decoration: line-through;
 }
 
-text-no-underline {
+.text-no-underline {
   text-decoration: none;
 }
 
 /* text transform */
-text-uppercase {
+.text-uppercase {
   text-transform: uppercase;
 }
 
-text-lowercase {
+.text-lowercase {
   text-transform: lowercase;
 }
 
-text-capitalize {
+.text-capitalize {
   text-transform: capitalize;
 }
 
-text-normal-case {
+.text-normal-case {
   text-transform: none;
 }
 
 /* text overflow */
-text-truncate {
+.text-truncate {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
-text-clip {
+.text-clip {
   text-overflow: clip;
 }
 
-text-ellipsis {
+.text-ellipsis {
   text-overflow: ellipsis;
 }
 
 /* text color utilities */
-text-primary {
+.text-primary {
   color: var(--color-text-primary);
 }
 
-text-secondary {
+.text-secondary {
   color: var(--color-text-secondary);
 }
 
-text-tertiary {
+.text-tertiary {
   color: var(--color-text-tertiary);
 }
 
-text-inverse {
+.text-inverse {
   color: var(--color-text-inverse);
 }
 
-text-muted {
+.text-muted {
   color: var(--color-text-muted);
 }
 
-text-disabled {
+.text-disabled {
   color: var(--color-text-disabled);
 }
 
 /* font style */
-font-italic {
+.font-italic {
   font-style: italic;
 }
 
-font-not-italic {
+.font-not-italic {
   font-style: normal;
 }
 

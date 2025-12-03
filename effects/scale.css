@@ -49,19 +49,19 @@
 }
 
 /* scale utilities */
-scale-in {
+.scale-in {
   animation: scale-in var(--transition-base) ease-in-out;
 }
 
-scale-out {
+.scale-out {
   animation: scale-out var(--transition-base) ease-in-out;
 }
 
-scale-in-center {
+.scale-in-center {
   animation: scale-in-center var(--transition-base) ease-in-out;
 }
 
-scale-out-center {
+.scale-out-center {
   animation: scale-out-center var(--transition-base) ease-in-out;
 }
 

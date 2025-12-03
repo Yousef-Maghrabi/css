@@ -3,19 +3,19 @@
    User select property utilities
    =========================================== */
 
-select-none {
+.select-none {
   user-select: none;
 }
 
-select-text {
+.select-text {
   user-select: text;
 }
 
-select-all {
+.select-all {
   user-select: all;
 }
 
-select-auto {
+.select-auto {
   user-select: auto;
 }
 

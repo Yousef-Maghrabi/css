@@ -49,19 +49,19 @@
 }
 
 /* rotate utilities */
-rotate-in {
+.rotate-in {
   animation: rotate-in var(--transition-base) ease-in-out;
 }
 
-rotate-out {
+.rotate-out {
   animation: rotate-out var(--transition-base) ease-in-out;
 }
 
-spin-in {
+.spin-in {
   animation: spin-in var(--transition-base) ease-in-out;
 }
 
-spin-out {
+.spin-out {
   animation: spin-out var(--transition-base) ease-in-out;
 }
 

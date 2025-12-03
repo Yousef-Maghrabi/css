@@ -3,7 +3,7 @@
    Appearance property utilities
    =========================================== */
 
-appearance-none {
+.appearance-none {
   appearance: none;
 }
 

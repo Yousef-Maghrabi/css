@@ -3,17 +3,17 @@
    Pagination navigation component
    =========================================== */
 
-pagination {
+.pagination {
   display: flex;
   align-items: center;
   gap: var(--spacing-1);
 }
 
-pagination-item {
+.pagination-item {
   display: flex;
 }
 
-pagination-link {
+.pagination-link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -31,23 +31,23 @@ pagination-link {
   cursor: pointer;
 }
 
-pagination-link:hover {
+.pagination-link:hover {
   background-color: var(--color-bg-secondary);
   border-color: var(--color-border-secondary);
 }
 
-pagination-link:focus {
+.pagination-link:focus {
   outline: var(--border-width-2) solid var(--color-border-focus);
   outline-offset: calc(var(--border-width-1) * -1);
 }
 
-pagination-link[data-current="true"] {
+.pagination-link[data-current="true"] {
   background-color: var(--color-interactive-primary);
   border-color: var(--color-interactive-primary);
   color: var(--color-text-inverse);
 }
 
-pagination-link:disabled {
+.pagination-link:disabled {
   opacity: var(--opacity-50);
   cursor: not-allowed;
   pointer-events: none;

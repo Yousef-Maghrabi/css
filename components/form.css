@@ -4,36 +4,36 @@
    =========================================== */
 
 /* form container */
-form-container {
+.form-container {
   display: flex;
   flex-direction: column;
   gap: var(--form-field-margin-bottom);
 }
 
 /* form group */
-form-group {
+.form-group {
   display: flex;
   flex-direction: column;
   gap: var(--form-field-gap);
 }
 
 /* form row */
-form-row {
+.form-row {
   display: flex;
   gap: var(--form-field-gap);
   align-items: flex-start;
 }
 
-form-row[data-align="center"] {
+.form-row[data-align="center"] {
   align-items: center;
 }
 
-form-row[data-align="end"] {
+.form-row[data-align="end"] {
   align-items: flex-end;
 }
 
 /* form section */
-form-section {
+.form-section {
   display: flex;
   flex-direction: column;
   gap: var(--form-field-margin-bottom);
@@ -43,13 +43,13 @@ form-section {
   background-color: var(--color-surface-primary);
 }
 
-form-section[data-variant="elevated"] {
+.form-section[data-variant="elevated"] {
   box-shadow: var(--shadow-base);
   border-color: var(--color-border-secondary);
 }
 
 /* form label */
-form-label {
+.form-label {
   display: block;
   font-weight: var(--font-weight-medium);
   color: var(--color-text-primary);
@@ -57,40 +57,40 @@ form-label {
   font-size: var(--font-size-sm);
 }
 
-form-label[data-required="true"]::after {
+.form-label[data-required="true"]::after {
   content: ' *';
   color: var(--color-state-error);
 }
 
 /* form field wrapper */
-form-field {
+.form-field {
   position: relative;
   display: flex;
   flex-direction: column;
 }
 
 /* form help text */
-form-help {
+.form-help {
   font-size: var(--font-size-xs);
   color: var(--color-text-secondary);
   margin-top: var(--spacing-1);
   line-height: var(--line-height-snug);
 }
 
-form-help[data-variant="error"] {
+.form-help[data-variant="error"] {
   color: var(--color-state-error);
 }
 
-form-help[data-variant="success"] {
+.form-help[data-variant="success"] {
   color: var(--color-state-success);
 }
 
-form-help[data-variant="warning"] {
+.form-help[data-variant="warning"] {
   color: var(--color-state-warning);
 }
 
 /* form error message */
-form-error {
+.form-error {
   font-size: var(--font-size-xs);
   color: var(--color-state-error);
   margin-top: var(--spacing-1);
@@ -99,13 +99,13 @@ form-error {
   gap: var(--spacing-1);
 }
 
-form-error::before {
+.form-error::before {
   content: '⚠';
   flex-shrink: 0;
 }
 
 /* form success message */
-form-success {
+.form-success {
   font-size: var(--font-size-xs);
   color: var(--color-state-success);
   margin-top: var(--spacing-1);
@@ -114,20 +114,20 @@ form-success {
   gap: var(--spacing-1);
 }
 
-form-success::before {
+.form-success::before {
   content: '✓';
   flex-shrink: 0;
 }
 
 /* form fieldset */
-form-fieldset {
+.form-fieldset {
   border: var(--border-width-1) solid var(--color-border-primary);
   border-radius: var(--border-radius-md);
   padding: var(--spacing-4);
   margin-bottom: var(--form-field-margin-bottom);
 }
 
-form-fieldset legend {
+.form-fieldset legend {
   font-weight: var(--font-weight-semibold);
   color: var(--color-text-primary);
   padding: 0 var(--spacing-2);
@@ -136,14 +136,14 @@ form-fieldset legend {
 }
 
 /* form divider */
-form-divider {
+.form-divider {
   height: var(--border-width-1);
   background-color: var(--color-border-primary);
   margin: var(--spacing-4) 0;
   border: none;
 }
 
-form-divider[data-variant="dashed"] {
+.form-divider[data-variant="dashed"] {
   background: repeating-linear-gradient(
     90deg,
     var(--color-border-primary),
@@ -154,7 +154,7 @@ form-divider[data-variant="dashed"] {
 }
 
 /* form actions */
-form-actions {
+.form-actions {
   display: flex;
   gap: var(--spacing-3);
   justify-content: flex-end;
@@ -163,54 +163,54 @@ form-actions {
   border-top: var(--border-width-1) solid var(--color-border-primary);
 }
 
-form-actions[data-align="start"] {
+.form-actions[data-align="start"] {
   justify-content: flex-start;
 }
 
-form-actions[data-align="center"] {
+.form-actions[data-align="center"] {
   justify-content: center;
 }
 
-form-actions[data-align="space-between"] {
+.form-actions[data-align="space-between"] {
   justify-content: space-between;
 }
 
-form-actions[data-direction="column"] {
+.form-actions[data-direction="column"] {
   flex-direction: column;
   align-items: stretch;
 }
 
 /* form grid */
-form-grid {
+.form-grid {
   display: grid;
   gap: var(--form-field-margin-bottom);
 }
 
-form-grid[data-cols="2"] {
+.form-grid[data-cols="2"] {
   grid-template-columns: repeat(2, 1fr);
 }
 
-form-grid[data-cols="3"] {
+..form-grid[data-cols="3"] {
   grid-template-columns: repeat(3, 1fr);
 }
 
-form-grid[data-cols="4"] {
+.form-grid[data-cols="4"] {
   grid-template-columns: repeat(4, 1fr);
 }
 
-form-grid[data-cols="auto-fit"] {
+.form-grid[data-cols="auto-fit"] {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
-form-grid[data-cols="auto-fill"] {
+.form-grid[data-cols="auto-fill"] {
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 }
 
 /* form responsive grid */
 @media (max-width: var(--breakpoint-md)) {
-  form-grid[data-cols="2"],
-  form-grid[data-cols="3"],
-  form-grid[data-cols="4"] {
+  .form-grid[data-cols="2"],
+  .form-grid[data-cols="3"],
+  .form-grid[data-cols="4"] {
     grid-template-columns: 1fr;
   }
 
@@ -221,25 +221,25 @@ form-grid[data-cols="auto-fill"] {
 }
 
 /* form validation states */
-form-field[data-state="error"] {
+.form-field[data-state="error"] {
   --input-border-color: var(--color-border-error);
 }
 
-form-field[data-state="success"] {
+.form-field[data-state="success"] {
   --input-border-color: var(--color-border-success);
 }
 
-form-field[data-state="warning"] {
+.form-field[data-state="warning"] {
   --input-border-color: var(--color-border-warning);
 }
 
 /* form loading state */
-form-container[data-loading="true"] {
+.form-container[data-loading="true"] {
   position: relative;
   pointer-events: none;
 }
 
-form-container[data-loading="true"]::after {
+.form-container[data-loading="true"]::after {
   content: '';
   position: absolute;
   top: 0;
@@ -253,7 +253,7 @@ form-container[data-loading="true"]::after {
   z-index: var(--z-index-10);
 }
 
-form-container[data-loading="true"]::before {
+.form-container[data-loading="true"]::before {
   content: '';
   position: absolute;
   top: 50%;

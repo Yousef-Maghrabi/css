@@ -29,11 +29,11 @@
 }
 
 /* morph utilities */
-morph-circle {
+.morph-circle {
   animation: morph-circle 2s ease-in-out infinite;
 }
 
-morph-square {
+.morph-square {
   animation: morph-square 2s ease-in-out infinite;
 }
 

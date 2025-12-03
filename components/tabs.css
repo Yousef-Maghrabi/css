@@ -3,17 +3,17 @@
    Tabbed interface component
    =========================================== */
 
-tabs {
+.tabs {
   display: flex;
   flex-direction: column;
 }
 
-tabs-list {
+.tabs-list {
   display: flex;
   border-bottom: var(--border-width-1) solid var(--color-border-primary);
 }
 
-tabs-trigger {
+.tabs-trigger {
   padding: var(--spacing-3) var(--spacing-4);
   background: none;
   border: none;
@@ -25,28 +25,28 @@ tabs-trigger {
   transition: var(--transition-fast);
 }
 
-tabs-trigger:hover {
+.tabs-trigger:hover {
   color: var(--color-text-primary);
 }
 
-tabs-trigger[data-state="active"] {
+.tabs-trigger[data-state="active"] {
   color: var(--color-interactive-primary);
   border-bottom-color: var(--color-interactive-primary);
 }
 
-tabs-trigger:focus {
+.tabs-trigger:focus {
   outline: var(--border-width-2) solid var(--color-border-focus);
   outline-offset: calc(var(--border-width-1) * -1);
 }
 
-tabs-content {
+.tabs-content {
   padding: var(--spacing-4) 0;
   opacity: 0;
   visibility: hidden;
   transition: all var(--transition-fast) ease-in-out;
 }
 
-tabs-content[data-state="active"] {
+.tabs-content[data-state="active"] {
   opacity: 1;
   visibility: visible;
 }

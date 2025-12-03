@@ -3,59 +3,59 @@
    Object fit property utilities
    =========================================== */
 
-object-contain {
+.object-contain {
   object-fit: contain;
 }
 
-object-cover {
+.object-cover {
   object-fit: cover;
 }
 
-object-fill {
+.object-fill {
   object-fit: fill;
 }
 
-object-none {
+.object-none {
   object-fit: none;
 }
 
-object-scale-down {
+.object-scale-down {
   object-fit: scale-down;
 }
 
-object-bottom {
+.object-bottom {
   object-position: bottom;
 }
 
-object-center {
+.object-center {
   object-position: center;
 }
 
-object-left {
+.object-left {
   object-position: left;
 }
 
-object-left-bottom {
+.object-left-bottom {
   object-position: left bottom;
 }
 
-object-left-top {
+.object-left-top {
   object-position: left top;
 }
 
-object-right {
+.object-right {
   object-position: right;
 }
 
-object-right-bottom {
+.object-right-bottom {
   object-position: right bottom;
 }
 
-object-right-top {
+.object-right-top {
   object-position: right top;
 }
 
-object-top {
+.object-top {
   object-position: top;
 }
 

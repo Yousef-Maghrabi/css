@@ -3,16 +3,16 @@
    Tooltip component with positioning variants
    =========================================== */
 
-tooltip {
+.tooltip {
   position: relative;
   display: inline-block;
 }
 
-tooltip-trigger {
+.tooltip-trigger {
   cursor: help;
 }
 
-tooltip-content {
+.tooltip-content {
   position: absolute;
   z-index: var(--tooltip-z-index);
   padding: var(--tooltip-padding-y) var(--tooltip-padding-x);
@@ -29,30 +29,30 @@ tooltip-content {
   pointer-events: none;
 }
 
-tooltip[data-state="visible"] tooltip-content {
+.tooltip[data-state="visible"] .tooltip-content {
   opacity: 1;
   visibility: visible;
 }
 
-tooltip[data-position="top"] tooltip-content {
+.tooltip[data-position="top"] .tooltip-content {
   bottom: calc(100% + var(--spacing-2));
   left: 50%;
   transform: translateX(-50%);
 }
 
-tooltip[data-position="bottom"] tooltip-content {
+.tooltip[data-position="bottom"] .tooltip-content {
   top: calc(100% + var(--spacing-2));
   left: 50%;
   transform: translateX(-50%);
 }
 
-tooltip[data-position="left"] tooltip-content {
+.tooltip[data-position="left"] .tooltip-content {
   right: calc(100% + var(--spacing-2));
   top: 50%;
   transform: translateY(-50%);
 }
 
-tooltip[data-position="right"] tooltip-content {
+.tooltip[data-position="right"] .tooltip-content {
   left: calc(100% + var(--spacing-2));
   top: 50%;
   transform: translateY(-50%);

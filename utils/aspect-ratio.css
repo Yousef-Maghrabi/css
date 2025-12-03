@@ -3,15 +3,15 @@
    Aspect ratio property utilities
    =========================================== */
 
-aspect-auto {
+.aspect-auto {
   aspect-ratio: auto;
 }
 
-aspect-square {
+.aspect-square {
   aspect-ratio: 1 / 1;
 }
 
-aspect-video {
+.aspect-video {
   aspect-ratio: 16 / 9;
 }
 

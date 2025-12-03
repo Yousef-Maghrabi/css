@@ -53,15 +53,15 @@
 }
 
 /* shake utilities */
-shake {
+.shake {
   animation: shake 0.5s ease-in-out;
 }
 
-shake-vertical {
+.shake-vertical {
   animation: shake-vertical 0.5s ease-in-out;
 }
 
-wiggle {
+.wiggle {
   animation: wiggle 1s ease-in-out;
 }
 

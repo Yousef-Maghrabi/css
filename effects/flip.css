@@ -49,19 +49,19 @@
 }
 
 /* flip utilities */
-flip-in-x {
+.flip-in-x {
   animation: flip-in-x var(--transition-base) ease-in-out;
 }
 
-flip-out-x {
+.flip-out-x {
   animation: flip-out-x var(--transition-base) ease-in-out;
 }
 
-flip-in-y {
+.flip-in-y {
   animation: flip-in-y var(--transition-base) ease-in-out;
 }
 
-flip-out-y {
+.flip-out-y {
   animation: flip-out-y var(--transition-base) ease-in-out;
 }
 

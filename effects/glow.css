@@ -26,11 +26,11 @@
 }
 
 /* glow utilities */
-glow {
+.glow {
   animation: glow 2s ease-in-out infinite;
 }
 
-glow-pulse {
+.glow-pulse {
   animation: glow-pulse 1.5s infinite;
 }
 
