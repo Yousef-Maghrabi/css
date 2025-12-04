@@ -241,6 +241,10 @@
   --color-bg-inverse: var(--color-gray-900);
   --color-bg-overlay: rgb(0 0 0 / 0.5);
 
+  /* Global Background/Text (theme-aware) */
+  --color-bg: var(--color-bg-primary);
+  --color-text: var(--color-text-primary);
+
   /* Surface Colors */
   --color-surface-primary: var(--color-gray-50);
   --color-surface-secondary: white;
@@ -288,6 +292,16 @@
   --color-content-success: var(--color-success-600);
   --color-content-warning: var(--color-warning-600);
   --color-content-error: var(--color-error-600);
+}
+
+/* ===========================================
+   THEME MODES
+   =========================================== */
+
+/* Inverse / Dark-like theme */
+[data-theme="inverse"] {
+  --color-bg: var(--color-bg-inverse);
+  --color-text: var(--color-text-inverse);
 }
 
 /* ===========================================
